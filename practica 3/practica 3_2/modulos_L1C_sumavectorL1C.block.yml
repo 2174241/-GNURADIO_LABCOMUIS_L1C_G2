@@ -1,0 +1,25 @@
+id: modulos_L1C_sumavectorL1C
+label: sumavectorL1C
+category: '[modulos_L1C]'
+
+templates:
+  imports: import modulos_L1C
+  make: modulos_L1C.sumavectorL1C(${Param1})
+
+
+parameters:
+- id: Param1
+  label: l_vect
+  dtype: int
+
+
+inputs:
+- label: entrada
+  dtype: float
+  vlen: ${Param1}
+
+outputs:
+- label: salida
+  dtype: float
+
+file_format: 1
